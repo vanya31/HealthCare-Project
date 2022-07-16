@@ -33,6 +33,7 @@ html {
   .form-container input[type=text], .form-container input[type=password] {
     width: 100%;
     padding: 15px;
+    padding-left: 30px;
     margin: 5px 0 22px 0;
     border: 2px solid #51808a4d;
     border-radius: 100px;
@@ -64,3 +65,27 @@ html {
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
   }
+  .input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    position: relative;
+    padding: 10px;
+    min-width: 40px;
+    bottom: -46px;
+    left: -82px;
+}
+.icon2 {
+    position: relative;
+    padding: 10px;
+    min-width: 40px;
+    bottom: -46px;
+    left: -82px;
+}
+  
