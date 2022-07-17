@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    background: rgb(234, 234, 234);
+    color: #51808a;
+    text-rendering: optimizeLegibility;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 20px;
+    background-color:white;
+    margin-right: 454px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+  }
+  
+  /* Full-width input fields */
+  .form-container input{
+    width: 100%;
+    padding: 15px;
+    padding-left: 30px;
+    margin: 5px 0 22px 0;
+    border: 2px solid #51808a4d;
+    border-radius: 100px;
+    background: transparent;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  button{
+    position: relative;
+    border-radius: 100px;
+    bottom: 2px;
+    left: 33px;
+    width: 100px;
+    padding: 13px;
+    background:#51808a4d; border:1px #51808a;
+    color:#51808a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+ 
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .button:hover, .open-button:hover {
+    opacity: 0.5;
+    color: #51808a;
+  }
+  .input-icons i {
+    position: absolute;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon2 {
+    position: relative;
+    padding: 10px;
+    min-width: 40px;
+    bottom: -47px;
+    left: -51px;
+}
+.icon {
+    position: relative;
+    padding: 10px;
+    min-width: 40px;
+    bottom: -46px;
+    left: -82px;
+}
+#last{
+  font-size: 0.5rem;
+}

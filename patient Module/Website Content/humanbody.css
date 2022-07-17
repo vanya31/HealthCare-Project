@@ -1,0 +1,62 @@
+html{
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+img{
+    margin-top: 100px;
+    height: 450px;
+}
+#sec1 div{
+    width:67px;
+    height:28px;
+    border-radius: 100px;
+    background:#51808a; 
+    border:1px #51808a;
+    margin:10px;
+
+}
+#head{bottom: 441px;
+    position: relative;
+    left: 182px;}
+#neck{
+    bottom: 391px;
+    position: relative;
+    left: 379px;
+}
+#heart{
+    position: relative;
+    bottom: 328px;
+    left: 301px;
+}
+#limbs{    position: relative;
+    bottom: 228px;
+    left: -150px;
+}
+#knees{position: relative;
+    bottom: 160px;
+    left: 79px;}
+#liver{
+    position: relative;
+    bottom: 317px;
+    left: -392px;
+}
+#stomach{
+    position: relative;
+    bottom: 307px;
+    left: 521px;
+}
+
+.relative{
+    position: relative;
+}
+button{
+    position: relative;
+    border-radius: 100px;
+    width: 100px;
+    padding: 13px;
+    background:#51808a4d; border:1px #51808a;
+    color:#51808a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+ 
+  }

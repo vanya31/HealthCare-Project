@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Lato:ital,wght@0,100;0,300;1,300&family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,14 +20,20 @@
         <form action="/action_page.php" class="form-container">
           <h1>Register</h1>
       
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
+          <label for="fname"><b>Full Name</b></label>
+          <input type="text" placeholder="Enter Full Name" name="fname" required>
       
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
+          <label for="no"><b>Contact Number</b></label>
+          <input type="tel" placeholder="Enter Contact Number" name="no" required>
+          <label for="mail"><b>E-mail</b></label>
+          <input type="email" placeholder="Enter E-Mail" name="mail" required>
+          <label for="address"><b>Address</b></label>
+          <input type="text" placeholder="Enter Address" name="address" required>
+          <label for="no"><b>Contact Number</b></label>
+          <input type="number" placeholder="Enter Contact Number" name="no" required>
       
-          <button type="submit" class="button">Login</button>
-          <button type="button" class="button cancel" onclick="closeForm()">Register</button>
+          <button type="submit" class="button">Next Page</button>
+          <button id="last" type="button" class="button cancel" onclick="closeForm()">Already have an account?</button>
         </form>
       </div>
     <script href="login.js"></script>
