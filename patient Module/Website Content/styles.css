@@ -30,26 +30,6 @@ html {
     width: 100%;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    padding: 50px;
-    padding-top: 50px;
-    margin: 0px;
-    font-family: 'Lato', sans-serif;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: 500px;
-    z-index: 11;
-
-}
-
-a:first-of-type {
-    margin-left: 400px;
-}
-
-a:hover {
-    color: rgba(255, 255, 255, 0.322);
-}
 div img {
     display: inline;
     height: 80px;
@@ -57,10 +37,8 @@ div img {
 }
 .hero {
     position: absolute;
-    top: 40%;
-    left: 10%;
-    bottom: 10%;
     transform: translate(-50% -50%);
+    text-align: center;
 }
 
 .headline {
@@ -80,7 +58,7 @@ div img {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    top: -120px;
+    top: 0px;
     z-index: 10;}
 
 .button{
