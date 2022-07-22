@@ -84,15 +84,16 @@ h3{
         font-size: 1.5rem;
     display: inline-block;
     position: relative;
-    left: 15px;
-    top: 128px;
+    left: 50px;
+    top: 25px;
     color: #5a72de ;
     max-width: 500px;
 }
 #details{
     position: relative;
-    top:50px;
-    left:100px;
+    top:25px;
+    left:30px;
+    max-width: 800px;
 }
 #reports h2{
     font-family: lato;
