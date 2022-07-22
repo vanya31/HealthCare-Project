@@ -1,0 +1,153 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: lato;
+    font-weight: 700;
+}
+
+html {
+    background: rgba(255, 255, 255, 0.813);
+    color:#5a72de;
+    text-rendering: optimizeLegibility;
+}
+.navbar{
+    background-color: #5a72de;
+    height:100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    padding-top: 50px;
+    margin: 0px;
+    font-family:lato;
+
+}
+
+.navbar a:first-of-type {
+    margin-left: 500px;
+}
+
+.navbar a:hover {
+    color: grey;
+}
+
+
+.headline {
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 5rem;
+    color: #5a72de;
+    line-height: 72px;
+    margin-top: 72px;
+    margin-left: 441px;
+    max-width: 800px;
+}
+
+div img {
+    display: inline;
+    height: 80px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+#pp{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    left: 792px;
+    top: -10px;
+    display: inline;
+}
+
+h3{
+        font-family: lato;
+        font-weight: 300;
+        font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    top: 128px;
+    color: #5a72de ;
+    max-width: 500px;
+}
+#details{
+    position: relative;
+    top:50px;
+    left:100px;
+}
+#reports h2{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:500px;
+top:70px;}
+
+#reports a{
+    position: relative;
+    bottom: -179px;
+    left: 200px;
+    padding: 50px;
+}
+#apps h2{
+    margin-top: 0px;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:318px;
+top:26px;
+color: white;
+}
+#calendar{
+    position: relative;
+    top: 92px;
+    right: -255px;
+}
+#apps{
+    background-color: #5a72de;
+    padding:0px;
+    margin-top: 182px;
+    height:800px;
+}
+.test{
+    height: 284px;
+    width: 315px;
+    margin: 50px;}
+.image{
+position: relative;
+top:100px;
+}
+#docs h2{
+    margin-top: 0px;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:450px;
+top:26px;
+color: #5a72de;
+
+}
