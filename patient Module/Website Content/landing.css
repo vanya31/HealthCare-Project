@@ -1,0 +1,22 @@
+
+body,html{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0.6)), url(./Images/istockphoto-1302923059-612x612.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.text-center{
+  height: 200px;
+  width: 200px;
+}
+h{
+  color: white;
+  font-size: 70px;
+}
+.btn.demo{
+  width: 200px;
+}
+.area{
+  max-width: 700px;
+  margin: auto;
+}
