@@ -77,10 +77,10 @@ button:hover {
 
 #sec1 h1 {
     font-family: 'Lato', sans-serif;
-    color: rgba(255, 255, 255, 0.655);
+    color: #51808a;
     position: relative;
-    left: 362px;
-    top: 14px px;
+    left: 616px;
+    bottom: -51px;
     max-width: 600px;
     font-size: 5rem;
     font-weight: 200;
@@ -93,8 +93,8 @@ button:hover {
     color: #51808a;
     font-size: 3rem;
     border: none;
-    left: 831px;
-    bottom: 496px;
+    left: 7px;
+    bottom: 232px;
     max-width: 200px;
     border-radius: 10px;
     font-family: lato;
@@ -110,29 +110,48 @@ h2 {
     max-width: 500px;
 }
 
-/* Dropdown Content (Hidden by Default) */
-/*.dropdown-content {
-    display: none;
-    background-color: #51808a4d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    position: absolute;
-  }
-  */
-/* Links inside the dropdown */
+.navbar{
+    background-color: #5a72de;
+    height:100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    padding-top: 50px;
+    margin: 0px;
+    font-family:lato;
+
+}
+
+a:first-of-type {
+    margin-left: 500px;
+}
+
+a:hover {
+    color: grey;
+};
+
 .dropdown-content a {
     color: #51808a;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     position: relative;
-    left: 831px;
-    bottom: 496px;
+    left: 7px;
+    bottom: 232px;
     font-family: lato;
     font-size: 1.5rem;
     max-width: 300px;
 }
+div img {
+    display: inline;
+    height: 80px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
