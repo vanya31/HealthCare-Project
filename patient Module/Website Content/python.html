@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+<link rel="stylesheet" href="styles.css">
+    <title>Home Page</title>
+   
+</head>
+<body>
+    <section id="sec1">
+        <h1>Where Do You Feel The Issue?</h1>
+    </section>
+    <div>
+    <h2 >Illness Checklist</h2>
+    <button type="button" id="button1">Head</button>
+    <button type="button" id="button2">Chest</button>
+    <button type="button" id="button3">Stomach</button>
+    <button type="button" id="button4">Eyes</button>
+    </div>
+
+<py-script>
+from js import document 
+from pyodide import create_proxy
+
+def partition(l, r, nums):
+    pivot, ptr = nums[r], l
+    for i in range(l, r):
+        if nums[i] <= pivot:
+            # Swapping values smaller than the pivot to the front
+            nums[i], nums[ptr] = nums[ptr], nums[i]
+            ptr += 1
+    # Finally swapping the last element with the pointer indexed number
+    nums[ptr], nums[r] = nums[r], nums[ptr]
+    return ptr
+ 
+ 
+def quicksort(l, r, nums):
+    nums=[5,3,7,8,2]
+    if len(nums) == 1:  # Terminating Condition for recursion. VERY IMPORTANT!
+        return nums
+    if l < r:
+        pi = partition(l, r, nums)
+        quicksort(l, pi-1, nums)  # Recursively sorting the left values
+        quicksort(pi+1, r, nums)  # Recursively sorting the right values
+    print(nums)
+    #print(quicksort(0, len(example)-1, example))
+   
+
+
+function_proxy = create_proxy(quicksort)
+
+document.getElementById("button1").addEventListener("click", function_proxy)
+document.getElementById("button2").addEventListener("click", function_proxy)
+document.getElementById("button3").addEventListener("click", function_proxy)
+document.getElementById("button4").addEventListener("click", function_proxy)
+ 
+ </py-script>
+    </body>
+</html>
