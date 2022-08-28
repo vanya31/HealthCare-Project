@@ -26,6 +26,27 @@
           <h2>LogIn options</h2>
           <button type="button" class="btn btn-close" data-dismiss="modal">&times</button>
         </div>
+        <form class="modal-content">
+    <div class="container">
+      <div class="row">
+      <div class="col-xl-6">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+</div>
+<div class="col-xl-6">
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+</div>
+</div>
+      <button type="submit" id="LogIn">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container">
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
       </div>
     </div>
   </div>
@@ -36,6 +57,41 @@
           <h2>Register Here</h2>
           <button type="button" class="btn btn-close" data-dismiss="modal">&times</button>
         </div>
+        <form class="modal-content">
+
+<label><b>Firstname</b> </label>
+<input type="text" name="firstname" placeholder="FirstName"><br>
+<label><b> Middlename</b> </label>
+<input type="text" name="middlename" placeholder="MiddleName"><br>
+<label><b> Lastname</b></label>
+<input type="text" name="lastname" placeholder="LastName"><br>
+<label><b>
+Gender :</b>
+</label>
+<input type="radio" name="male">Male
+<input type="radio" name="female">Female
+<input type="radio" name="other">Other
+<br><br>
+<label><b>
+Phone :
+</label>
+<input type="text" name="country code"  value="+91" size="2"/>
+<input type="text" name="phone" size="10" placeholder="PhoneNumber"><br><br>
+Address
+<br>
+<textarea value="address">
+</textarea>
+<br> <br>
+Email:
+<input type="email" id="email" name="email" placeholder="email"> <br>
+<br>
+Password:
+<input type="Password" id="pass" name="pass" placeholder="password"> <br>
+<br>
+Re-type password:
+<input type="Password" id="repass" name="repass" placeholder="password"> <br> <br>
+<input type="button" value="Submit"/>
+</form>
       </div>
     </div>
   </div>
