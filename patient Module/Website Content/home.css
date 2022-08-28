@@ -1,0 +1,173 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: lato;
+    font-weight: 700;
+}
+
+html {
+    background: rgba(255, 255, 255, 0.813);
+    color:#5a72de;
+    text-rendering: optimizeLegibility;
+}
+.navbar{
+    background-color: #5a72de;
+    height:100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.relative {
+    position: relative;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.w-full {
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 50px;
+    padding-top: 50px;
+    margin: 0px;
+    font-family:lato;
+
+}
+
+a:first-of-type {
+    margin-left: 500px;
+}
+
+a:hover {
+    color: grey;
+}
+
+
+.headline {
+    font-family: Lato;
+    font-weight: 700;
+    font-size: 5rem;
+ color: #5a72de;
+    line-height: 72px;
+    margin-top: 100px;
+    max-width: 800px;
+}
+.abs {
+    position: absolute;
+    left: 90px;
+    top: 197px;
+}
+
+div img {
+    display: inline;
+    height: 80px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#doc{
+    position: relative;
+    left:800px;
+    bottom:-5px;
+}
+#sub{
+    text-align: center;
+    margin-top: 50px;
+}
+#aboutme{
+    background-color: #5a72de;
+    color: white;
+    height:300px;
+}
+#aboutme h2{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:200px;
+top:100px;}
+#aboutme p {
+    max-width: 400px;
+    margin-left: 658px;
+    margin-bottom: 50px;
+    display: inline-block;
+    text-align: justify;
+    font-family: lato;
+    font-weight: 500;
+}
+#testimonials h2{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:500px;
+top:70px;
+
+}
+.test{
+        height: 284px;
+        width: 315px;
+        margin: 50px;}
+.image{
+    position: relative;
+    top:100px;
+}
+#contact-us{
+    background-color: #5a72de;
+    height: 500px;
+    margin-top: 100px;}
+#contact-us h2{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:500px;
+top:70px;
+color: white;
+}
+#contact-us h3{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 1.5rem;
+display: inline-block;
+position: relative;
+left: 15px;
+top: 128px;
+color: white;
+max-width: 500px;
+
+}
+.socials h2{
+    font-family: lato;
+    font-weight: 300;
+    font-size: 4rem;
+display: inline;
+position: relative;
+left:500px;
+top:70px;
+color: #5a72de;
+}
+.socials a{
+    color: #5a72de;
+    margin-top: 200px;
+    margin-left: 50px;
+    margin-right: 0px;
+    padding: 30px;;
+}
+.socials span{
+    position: relative;
+    top: 58px;
+    left: 52px
+}
