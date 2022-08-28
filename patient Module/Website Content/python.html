@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
 <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Home Page</title>
    
 </head>
@@ -17,49 +19,48 @@
         <h1>Where Do You Feel The Issue?</h1>
     </section>
     <div>
-    <h2 >Illness Checklist</h2>
-    <button type="button" id="button1">Head</button>
-    <button type="button" id="button2">Chest</button>
-    <button type="button" id="button3">Stomach</button>
-    <button type="button" id="button4">Eyes</button>
+    <button type="button" id="head" pys-onClick="show_output">Head</button>
+    <button type="button" id="chest" pys-onClick="show_output">Chest</button>
+    <button type="button" id="stomach" pys-onClick="show_output">Stomach</button>
+    <button type="button" id="eyes" pys-onClick="show_output">Eyes</button>
     </div>
-
+    <div id="output_div" style="margin-top: 10px;margin-bottom: 10px;"></div>
+    <py-env>
+        - tabulate
+    </py-env>
 <py-script>
-from js import document 
-from pyodide import create_proxy
-
-def partition(l, r, nums):
-    pivot, ptr = nums[r], l
-    for i in range(l, r):
-        if nums[i] <= pivot:
-            # Swapping values smaller than the pivot to the front
-            nums[i], nums[ptr] = nums[ptr], nums[i]
-            ptr += 1
-    # Finally swapping the last element with the pointer indexed number
-    nums[ptr], nums[r] = nums[r], nums[ptr]
-    return ptr
+from tabulate import tabulate
+mydata = [
+    ['a', 'b', 'c'],
+    [12, 34, 56],
+    ['Geeks', 'for', 'geeks!']
+            ]
+head = ["Name", "City","sites"]
  
- 
-def quicksort(l, r, nums):
-    nums=[5,3,7,8,2]
-    if len(nums) == 1:  # Terminating Condition for recursion. VERY IMPORTANT!
-        return nums
-    if l < r:
-        pi = partition(l, r, nums)
-        quicksort(l, pi-1, nums)  # Recursively sorting the left values
-        quicksort(pi+1, r, nums)  # Recursively sorting the right values
-    print(nums)
-    #print(quicksort(0, len(example)-1, example))
-   
+print(tabulate(mydata, headers=head, tablefmt="grid"))
 
-
-function_proxy = create_proxy(quicksort)
-
-document.getElementById("button1").addEventListener("click", function_proxy)
-document.getElementById("button2").addEventListener("click", function_proxy)
-document.getElementById("button3").addEventListener("click", function_proxy)
-document.getElementById("button4").addEventListener("click", function_proxy)
- 
- </py-script>
+def show_output(*args, **kwargs):
+    output = Element("output_div")
+    output.write("Relevant Doctors")
+    
+</py-script>
+<section>
+    <div id="contact-us">
+        <h2>Contact Us</h2><br><br>
+        <h3>Contact Number: xxxxxxxxxx</h3><br><br>
+        <h3>Email: vmh@gmail.com</h3><br><br>
+        <h3>Address: Lorem ipsum, dolor sit amet consectetur adipisicing elit</h3>
+    </div>
+    <section>
+        <div class="flex socials">
+            <h2>Our Socials</h2>
+            <a href="https://www.instagram.com/vanya._.verma/" target="_blank"><span class="sname">Instagram</span><i
+                    class="fa fa-instagram fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/vanya-verma-196b511b8/" target="_blank"><span
+                    class="sname">LinkedIn</span><i class="fa fa-linkedin fa-3x"></i></a>
+            <a href="https://github.com/vanya31" target="_blank"><span class="sname">Facebook</span><i
+                    class="fa fa-facebook fa-3x"></i></a>
+        </div>
+    </section>
     </body>
 </html>
