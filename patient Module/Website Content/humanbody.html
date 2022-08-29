@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />-->
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <link rel="stylesheet" href="humanbody.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,11 +30,53 @@
         <div class="options">
           <a href="#" class="demo">Head</a>
           <a href="#" class="demo">Heart</a>
-          <a href="#" class="demo">Neck and Spine</a>
+          <a href="#" class="demo">Back</a>
           <a href="#" class="demo">Limbs</a>
           <a href="#" class="demo">Knees</a>
           <a href="#" class="demo">Stomach</a>
       </div>
         </div>
+
+<py-script>
+
+def partition(l, r, nums):
+	pivot, ptr = nums[r], l
+	for i in range(l, r):
+		if nums[i] <= pivot:
+			nums[i], nums[ptr] = nums[ptr], nums[i]
+			ptr += 1
+	nums[ptr], nums[r] = nums[r], nums[ptr]
+	return ptr
+
+def quicksort(l, r, nums):
+	if len(nums) == 1: 
+		return nums
+	if l < r:
+		pi = partition(l, r, nums)
+		quicksort(l, pi-1, nums) # Recursively sorting the left values
+		quicksort(pi+1, r, nums) # Recursively sorting the right values
+	return nums
+
+def ratings(x):
+ example = { "Dr Brick Wall":"Back",
+ "Dr Ether":"Back",
+ "Dr Comfort":"Neck",
+ "Dr Deadman":"Limbs",
+ "Dr Hand":"Stomach",
+ "Dr Luke":"Limbs",
+ "Dr Finger":"Back",
+ "Dr Neupane":"Back"
+ }
+ value = {i for i in example if example[i]=="Back"}
+ print(value)
+
+Doctors=["Back","Neck","Limbs","Stomach","Limbs","Back","Back"]
+for x in Doctors:
+ if x == "Back":
+   ratings(x)
+
+
+
+</py-script>
 </body>
 </html>
